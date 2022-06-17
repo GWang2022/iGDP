@@ -1,2 +1,2 @@
 # GRKit
-Refining genome assembly sampled from wild eukaryotic microbes.
+GRP is an automatic pipeline to refine genome assembly sampled from wild eukaryotic microbes.
