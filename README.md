@@ -1,5 +1,5 @@
 # Introduction
-Genome Refinement Pipeline (GRP) is an automatic pipeline to refine genome assembly sampled from wild eukaryotic microbes by combining homology search approach and telomere-reads assisted approach.
+Genome Refinement Pipeline (GRP) aims to refine genome assembly sampled from wild eukaryotic microbes by combining homology search approach and telomere-reads assisted approach.
 
 # Dependencies
 MMseqs2. https://github.com/soedinglab/mmseqs2/
