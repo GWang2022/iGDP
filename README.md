@@ -10,6 +10,9 @@ bwa. https://github.com/lh3/bwa
 
 # Workflow of GRP
 ![GRP](https://user-images.githubusercontent.com/107245708/174239853-cae500b5-2a4e-47d1-9fa6-a6f8f698875a.jpg)
+![GRP2](https://user-images.githubusercontent.com/107245708/174463036-1e478367-ae33-43a6-9fe0-802ddc313fe9.jpg)
+
 # How to run GRP
+
 Homology search approach
 
