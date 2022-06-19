@@ -13,7 +13,8 @@ bwa. https://github.com/lh3/bwa
 
 
 # How to run GRP
-Homology search approach
+
+Homology Search Approach
 
 perl homo_recall.pl -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_GRP_scripts> -d <mmseqs_DB> [options]
 
