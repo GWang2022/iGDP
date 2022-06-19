@@ -14,15 +14,14 @@ bwa. https://github.com/lh3/bwa
 
 # How to run GRP
 
-Homology Search Approach
+## *Homology Search Approach*
 
-perl homo_recall.pl -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_GRP_scripts> -d <mmseqs_DB> [options]
+perl homology_recall.pl -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_GRP_scripts> -d <mmseqs_DB> [options]
 
 The options for using this approach is below.
         -i <required>:  input contigs [fa.gz or uncompress]
         -o <required>:  path to output directory
-        -b <required>:  bin size [contig is cut to -b bp for homology search]
         -p <required>:  path to directory of GRP scripts
         -d <required>:  database for mmseqs search
-        -s [optional]:  mmseqs sensitivity [1.0 faster; 4.0 fast; 7.5 sensitive; default 4.0]  
-        e.g. perl homo_recall.pl -i input.contigs.fa -o output -b 1000 -p path_to_GRP/scripts -d mmseqs_DB
+        -b [optional]:  bin size [contig is cut to -b bp for homology search; default 1000]
+        -s [optional]:  mmseqs sensitivity [1.0 faster; 4.0 fast; 7.5 sensitive; default 4.0]
