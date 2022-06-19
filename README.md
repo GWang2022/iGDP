@@ -18,6 +18,7 @@ bwa. https://github.com/lh3/bwa
 
 perl homology_recall.pl -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_GRP_scripts> -d <mmseqs_DB> [options]
 
+```
 The options for using this approach is below.
         -i <required>:  input contigs [fa.gz or uncompress]
         -o <required>:  path to output directory
@@ -25,3 +26,4 @@ The options for using this approach is below.
         -d <required>:  database for mmseqs search
         -b [optional]:  bin size [contig is cut to -b bp for homology search; default 1000]
         -s [optional]:  mmseqs sensitivity [1.0 faster; 4.0 fast; 7.5 sensitive; default 4.0]
+```
