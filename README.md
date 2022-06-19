@@ -27,3 +27,6 @@ The options for using this approach is below.
         -b [optional]:  bin size [contig is cut to -b bp for homology search; default 1000]
         -s [optional]:  mmseqs sensitivity [1.0 faster; 4.0 fast; 7.5 sensitive; default 4.0]
 ```
+
+## *Telomere-reads Assisted Approach*
+
