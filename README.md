@@ -13,3 +13,4 @@ bwa. https://github.com/lh3/bwa
 
 # How to run GRP
 Homology search approach
+
