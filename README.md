@@ -14,7 +14,7 @@ bwa. https://github.com/lh3/bwa
 
 # How to run GRP
 
-## *Homology Search Approach*
+* ## *Homology Search Approach*
 ```
 perl homology_recall.pl -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_GRP_scripts> -d <mmseqs_DB> [options]
 ```
@@ -31,7 +31,7 @@ The options for using this approach are below.
         -T [optional]:  translation table of the target genome [default: 6 for ciliates]
 ```
 
-## *Telomere-reads Assisted Approach*
+* ## *Telomere-reads Assisted Approach*
 ```
 perl telo_reads_recall.pl -i <input.contigs.fa> -o <output_dir> -p <path_to_GRP/scripts> -r1 <reads1> -r2 <reads2> [options]
 ```
@@ -48,7 +48,7 @@ The options for using this approach are below.
         -s  [optional]:  threads for samtools view [default: 8]
 ```
 
-## *Combining Sequences From Two Approaches*
+* ## *Combining Sequences From Two Approaches*
 ```
 cat target.homology.recall.contig.id target.telo_reads.recall.contig.id | sort | uniq | perl /path_to_GRP/scripts/combine_contigs.pl input.contigs.fa - > target.genome.fasta
 ```
