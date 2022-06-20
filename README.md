@@ -48,7 +48,7 @@ The options for using this approach are below.
         -s  [optional]:  threads for samtools view [default: 8]
 ```
 
-## *Combining Sequences From Two Approach*
+## *Combining Sequences From Two Approaches*
 ```
 cat target.homology.recall.contig.id target.telo_reads.recall.contig.id | sort | uniq | perl /path_to_GRP/scripts/combine_contigs.pl input.contigs.fa - > target.genome.fasta
 ```
