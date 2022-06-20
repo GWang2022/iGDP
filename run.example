@@ -1,6 +1,6 @@
 ## homology search approach
-nohup perl homology_recall.pl -i input.contigs.fa -o target -p /path_to_GRP/scripts -d mmseqs_DB 2>>grp.log&
+nohup perl /path_to_GRP/scripts/homology_recall.pl -i input.contigs.fa -o target -p /path_to_GRP/scripts -d mmseqs_DB 2>>grp.log&
 ## telomere reads assisted approach 
-nohup perl telo_reads_recall.pl -i input.contigs.fa -o target -p /path_to_GRP/scripts -r1 example_read1.fq -r2 example_read2.fq 2>>grp.log &
+nohup perl /path_to_GRP/scripts/telo_reads_recall.pl -i input.contigs.fa -o target -p /path_to_GRP/scripts -r1 example_read1.fq -r2 example_read2.fq 2>>grp.log &
 ## obtain final target genome sequences
 cat target.homology.recall.contig.id target.telo_reads.recall.contig.id | sort | uniq | perl /path_to_GRP/scripts/combine_contigs.pl input.contigs.fa - > target.genome.fasta
