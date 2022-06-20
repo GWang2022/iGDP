@@ -4,9 +4,9 @@ Genome Refinement Pipeline (GRP) is an automatic workflow to refine the target g
 # Dependencies
 MMseqs2. https://github.com/soedinglab/mmseqs2/
 
-samtools. https://github.com/samtools/samtools
-
 bwa. https://github.com/lh3/bwa
+
+samtools. https://github.com/samtools/samtools
 
 # Workflow of GRP
 ![gpr1](https://user-images.githubusercontent.com/107245708/174552229-62107082-3d7b-4555-b1c8-0cba361ac7af.jpg)
