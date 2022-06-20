@@ -53,6 +53,6 @@ The options for using this approach are below.
 cat target.homology.recall.contig.id target.telo_reads.recall.contig.id | sort | uniq | perl /path_to_GRP/scripts/combine_contigs.pl input.contigs.fa - > target.genome.fasta
 ```
 
-## Quality evaluation of the refined target genome
+# Quality evaluation of the refined target genome
 
 The quality of refined target genome including recall rate, purity and completeness can be evaluated using the corresponding metrics shown in the workflow diagram.
