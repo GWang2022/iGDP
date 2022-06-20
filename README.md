@@ -37,6 +37,7 @@ perl telo_reads_recall.pl -i <input.contigs.fa> -o <output_dir> -p <path_to_GRP/
 ```
 
 The options for using this approach are below.
+```
         -i  <required>:  input contigs [fa.gz or uncompress]
         -o  <required>:  path to output directory
         -p  <required>:  path to directory of GRP scripts
