@@ -16,7 +16,7 @@ samtools. https://github.com/samtools/samtools
 
 * ## *Homology Search Approach*
 ```
-perl homology_recall.pl -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_GRP_scripts> -d <mmseqs_DB> [options]
+perl homology_recall.pl -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_GRP/scripts> -d <mmseqs_DB> [options]
 ```
 
 The options for using this approach are below.
