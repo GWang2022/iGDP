@@ -1,5 +1,10 @@
-# Introduction
-Genome Refinement Pipeline (GRP) is an automatic workflow to refine the target genome assembled from wild samples of eukaryotic microbes by combining homology search approach and telomere-reads assisted approach. It can be applied to different sequencing technology such as NGS, sing-cell sequencing and third-generation sequencing, and different types of omics data such as genomic and transcriptomic data.
+# iGDP v1.0
+
+The integrated Genome Decontamination Pipeline (iGDP) works as a positive filter to select the target sequences from contaminated genome assemblies of wild ciliated microeukaryotes.
+
+
+Issues, bug reports and feature requests: 
+Contact: Guangying Wang (wangguangying@ihb.ac.cn)
 
 # Dependencies
 MMseqs2. https://github.com/soedinglab/mmseqs2/
