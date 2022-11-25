@@ -4,6 +4,7 @@ The integrated Genome Decontamination Pipeline (iGDP) works as a positive filter
 
 
 Issues, bug reports and feature requests: https://github.com/GWang2022/iGDP/issues
+
 Contact: Guangying Wang (wangguangying@ihb.ac.cn)
 
 # Dependencies
