@@ -9,8 +9,7 @@ bwa. https://github.com/lh3/bwa
 samtools. https://github.com/samtools/samtools
 
 # Workflow of GRP
-![gpr1](https://user-images.githubusercontent.com/107245708/174552229-62107082-3d7b-4555-b1c8-0cba361ac7af.jpg)
-
+![1](https://user-images.githubusercontent.com/107245708/203978844-f047e839-64c0-431b-8747-6e2d674a2838.jpg)
 
 # How to run GRP
 
