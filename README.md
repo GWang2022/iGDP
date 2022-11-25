@@ -1,4 +1,4 @@
-# iGDP v1.0
+# iGDP v1.1
 
 The integrated Genome Decontamination Pipeline (iGDP) works as a positive filter to select the target sequences from contaminated genome assemblies of wild ciliated microeukaryotes.
 
