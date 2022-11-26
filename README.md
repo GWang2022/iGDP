@@ -1,5 +1,9 @@
 # iGDP v1.1
 
+![Active](https://www.repostatus.org/badges/latest/active.svg) ![Good](https://img.shields.io/badge/latest%20version-v1.1.0-blue)  
+
+## An integrated Genome Decontamination Pipeline (iGDP) for wild ciliated microeukaryotes
+
 The integrated Genome Decontamination Pipeline (iGDP) works as a positive filter to select the target sequences from contaminated genome assemblies of wild ciliated microeukaryotes.
 
   * Issues, bug reports and feature requests: [GitHub issues](https://github.com/GWang2022/iGDP/issues)
@@ -7,8 +11,9 @@ The integrated Genome Decontamination Pipeline (iGDP) works as a positive filter
   * Citation: [Jiang et al. (2022), unpublished]()
 
 # Dependencies
-MMseqs2. https://github.com/soedinglab/mmseqs2/
-
+MMseqs2. https://github.com/soedinglab/mmseqs2/  
+install via conda  
+conda install -c conda-forge -c bioconda mmseqs2  
 bwa. https://github.com/lh3/bwa
 
 samtools. https://github.com/samtools/samtools
