@@ -3,7 +3,7 @@
 The integrated Genome Decontamination Pipeline (iGDP) works as a positive filter to select the target sequences from contaminated genome assemblies of wild ciliated microeukaryotes.
 
   * Issues, bug reports and feature requests: [GitHub issues](https://github.com/GWang2022/iGDP/issues)
-  * Contact: Guangying Wang (wangguangying@ihb.ac.cn)
+  * Contact: Guangying Wang (wangguangying@ihb.ac.cn); Chuangqi Jiang (jiangchuanqi@ihb.ac.cn)
   * Citation: [Jiang et al. (2022), unpublished]()
 
 # Dependencies
