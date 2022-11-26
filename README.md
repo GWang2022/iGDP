@@ -1,6 +1,6 @@
 # iGDP v1.1
 
-![Active](https://www.repostatus.org/badges/latest/active.svg) ![Good](https://img.shields.io/badge/latest%20version-v1.1.0-blue)  
+![Active](https://www.repostatus.org/badges/latest/active.svg) ![Good](https://img.shields.io/badge/latest%20version-v1.0.0-red) ![GPL](https://img.shields.io/eclipse-marketplace/l/GPLv3.0?logo=GPL-3.0)
 
 ## An integrated Genome Decontamination Pipeline (iGDP) for wild ciliated microeukaryotes
 
