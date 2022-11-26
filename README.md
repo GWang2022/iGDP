@@ -2,10 +2,9 @@
 
 The integrated Genome Decontamination Pipeline (iGDP) works as a positive filter to select the target sequences from contaminated genome assemblies of wild ciliated microeukaryotes.
 
-
-* Issues, bug reports and feature requests: [GitHub issues](https://github.com/GWang2022/iGDP/issues)
-
-* Contact: Guangying Wang (wangguangying@ihb.ac.cn)
+  * Issues, bug reports and feature requests: [GitHub issues](https://github.com/GWang2022/iGDP/issues)
+  * Contact: Guangying Wang (wangguangying@ihb.ac.cn)
+  * Citation: [Jiang et al. (2022), unpublished]()
 
 # Dependencies
 MMseqs2. https://github.com/soedinglab/mmseqs2/
@@ -14,8 +13,11 @@ bwa. https://github.com/lh3/bwa
 
 samtools. https://github.com/samtools/samtools
 
-# Workflow of GRP
-![1](https://user-images.githubusercontent.com/107245708/203978844-f047e839-64c0-431b-8747-6e2d674a2838.jpg)
+# Workflow
+
+<div align=center>
+<img src = "https://user-images.githubusercontent.com/107245708/204078544-9069699d-b6ac-450b-ba1c-5f7f61e4141f.jpg" width = "772">
+</div>
 
 # How to run GRP
 
