@@ -34,7 +34,7 @@ The iGDP works as a positive filter to select target ciliate sequences from cont
 # Download NCBI NR protein database using mmseqs
 ```
 # Usage: mmseqs databases <name> <o:sequenceDB> <tmpDir> [options]
-# Downloading NR database called NRdb in your working directory using the following command
+# Downloading NR database named with prefix 'NRdb' in your working directory using the following command
 $ mmseqs databases NR NRdb tmpDir
 ```
 *Tip:* You can creat your own database for homology search using ```mmseqs createdb``` module. For more details, see [mmseqs](https://github.com/soedinglab/MMseqs2).
