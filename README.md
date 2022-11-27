@@ -28,7 +28,7 @@ The iGDP works as a positive filter to select target ciliate sequences from cont
   $ cd IMSindel
   $ docker build -t imsindel .
   ```
-# Download NCBI NR reference database using mmseqs
+# Download NCBI NR protein database using mmseqs
 ```
 # mmseqs databases
 Usage: mmseqs databases <name> <o:sequenceDB> <tmpDir> [options]
