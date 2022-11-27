@@ -4,7 +4,7 @@
 
 ## An integrated Genome Decontamination Pipeline (iGDP) for wild ciliated microeukaryotes
 
-The iGDP works as a positive filter to select target ciliate sequences from contaminated genomic data.
+The iGDP works as a positive filter to select target ciliate sequences from contaminated genomic data by integrating homology search, telomere reads-assisted and clustering approaches.
 
   * Issues, bug reports and feature requests: [GitHub issues](https://github.com/GWang2022/iGDP/issues)
   * Contact: Guangying Wang (wangguangying@ihb.ac.cn); Chuangqi Jiang (jiangchuanqi@ihb.ac.cn)
@@ -13,40 +13,39 @@ The iGDP works as a positive filter to select target ciliate sequences from cont
 # Install
 * ## Depend tools (Please ignore if already available)  
   ```
-  mmseqs2  
+  # mmseqs2  
   $ conda install -c bioconda mmseqs2
-  bwa
+  # bwa
   $ conda install -c bioconda bwa
-  samtools
+  # samtools
   $ conda install -c bioconda samtools
-  metabat2
+  # metabat2
   $ conda install -c bioconda metabat2
   ```
 * ## iGDP 
   ```
   $ git clone https://github.com/GWang2022/iGDP.git
-  $ export PATH=$(pwd)/iGDP/:$PATH
-  $ 
+  $ echo 'PATH=$(pwd)/iGDP/scripts:$PATH' >> ~/.bashrc
+  $ source ~/.bashrc
   ```
 # Download NCBI NR protein database using mmseqs
 ```
-# mmseqs databases
-Usage: mmseqs databases <name> <o:sequenceDB> <tmpDir> [options]
-# downloading NR database called NRdb in your working directory using the following command
+# Usage: mmseqs databases <name> <o:sequenceDB> <tmpDir> [options]
+# Downloading NR database called NRdb in your working directory using the following command
 $ mmseqs databases NR NRdb tmpDir
 ```
 
-# Workflow
+# Workflow of iGDP
 
 <div align=center>
-<img src = "https://user-images.githubusercontent.com/107245708/204078544-9069699d-b6ac-450b-ba1c-5f7f61e4141f.jpg" width = "772">
+<img src = "https://user-images.githubusercontent.com/107245708/204116847-6863b43b-fb07-477b-83d5-cf30fc898083.jpg">
 </div>
 
-# How to run iGDP
+# Getting started
 
-* ## *Homology Search Approach*
+* ## *Homology search approach*
 ```
-perl homology_recall.pl -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_GRP/scripts> -d <mmseqs_DB> [options]
+perl homology_recall.pl -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_iGDP/scripts> -d <mmseqs_DB> [options]
 ```
 
 The options for using this approach are below.
