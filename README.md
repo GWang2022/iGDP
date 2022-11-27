@@ -20,7 +20,14 @@ conda install -c conda-forge -c bioconda mmseqs2
 ```
 conda install -c bioconda bwa
 ```
-samtools. https://github.com/samtools/samtools
+* samtools
+```
+conda install -c bioconda samtools
+```
+* metabat2
+```
+conda install -c bioconda metabat2
+```
 
 # Workflow
 
