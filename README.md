@@ -11,7 +11,7 @@ The iGDP works as a positive filter to select target ciliate sequences from cont
   * Citation: [Jiang et al. (2022), unpublished]()
 
 # Install
-* ## Depend tools (Please ignore if already available)  
+## Depend tools (Please ignore if already available)  
   ```
   # mmseqs2
   $ conda install -c bioconda mmseqs2
@@ -25,7 +25,7 @@ The iGDP works as a positive filter to select target ciliate sequences from cont
   # metabat2
   $ conda install -c bioconda metabat2
   ```
-* ## iGDP 
+## iGDP 
   ```
   $ git clone https://github.com/GWang2022/iGDP.git
   $ echo 'PATH=$(pwd)/iGDP/scripts:$PATH' >> ~/.bashrc
@@ -41,11 +41,11 @@ $ mmseqs databases NR NRdb tmpDir
 # Usage
 ## Workflow
 <div align=center>
-<img src = "https://user-images.githubusercontent.com/107245708/204116847-6863b43b-fb07-477b-83d5-cf30fc898083.jpg">
+<img src = "https://user-images.githubusercontent.com/107245708/204125506-400ad79a-a7e2-436e-abd4-b290eb2fd640.jpg">
 </div>
 
 ## Run iGDP
-* ### Homology search approach
+* ### Implement homology search approach
 ```
 iGDP_homology_recall.sh -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_iGDP/scripts> -d <mmseqs_DB> [options]
 
@@ -60,7 +60,7 @@ Parameters:
   -T [optional]:  translation table of the target genome [default: 6 for ciliates]
 ```
 
-* ### Telomere-reads Assisted Approach
+* ### Implement telomere-reads assisted approach
 ```
 perl telo_reads_recall.pl -i <input.contigs.fa> -o <output_dir> -p <path_to_GRP/scripts> -r1 <reads1> -r2 <reads2> [options]
 
