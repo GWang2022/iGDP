@@ -11,19 +11,30 @@ The iGDP works as a positive filter to select target ciliate sequences from cont
   * Citation: [Jiang et al. (2022), unpublished]()
 
 # Install
-* ## Depend tools (Please ignore if already available)
+* ## Depend tools (Please ignore if already available)  
   ```
   mmseqs2  
-  conda install -c bioconda mmseqs2
+  $ conda install -c bioconda mmseqs2
   bwa
-  conda install -c bioconda bwa
-  * samtools
-  conda install -c bioconda samtools
+  $ conda install -c bioconda bwa
+  samtools
+  $ conda install -c bioconda samtools
   metabat2
-  conda install -c bioconda metabat2
+  $ conda install -c bioconda metabat2
   ```
-* ## iGDP
-
+* ## iGDP 
+  ```
+  $ git clone https://github.com/NCGG-MGC/IMSindel.git
+  $ cd IMSindel
+  $ docker build -t imsindel .
+  ```
+# Download NCBI NR reference database using mmseqs
+```
+# mmseqs databases
+Usage: mmseqs databases <name> <o:sequenceDB> <tmpDir> [options]
+# downloading NR database called NRdb in your working directory using the following command
+$ mmseqs databases NR NRdb tmpDir
+```
 
 # Workflow
 
@@ -31,7 +42,7 @@ The iGDP works as a positive filter to select target ciliate sequences from cont
 <img src = "https://user-images.githubusercontent.com/107245708/204078544-9069699d-b6ac-450b-ba1c-5f7f61e4141f.jpg" width = "772">
 </div>
 
-# How to run GRP
+# How to run iGDP
 
 * ## *Homology Search Approach*
 ```
