@@ -12,7 +12,7 @@ The iGDP works as a positive filter to select target ciliate sequences from cont
 
 # Install
 ## depend tools (Please ignore if already available)
-* MMseqs2
+* mmseqs2
 ```
 conda install -c conda-forge -c bioconda mmseqs2
 ```
