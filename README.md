@@ -24,9 +24,9 @@ The iGDP works as a positive filter to select target ciliate sequences from cont
   ```
 * ## iGDP 
   ```
-  $ git clone https://github.com/NCGG-MGC/IMSindel.git
-  $ cd IMSindel
-  $ docker build -t imsindel .
+  $ git clone https://github.com/GWang2022/iGDP.git
+  $ export PATH=$(pwd)/iGDP/:$PATH
+  $ 
   ```
 # Download NCBI NR protein database using mmseqs
 ```
