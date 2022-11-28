@@ -49,8 +49,8 @@ $ mmseqs databases NR NRdb tmpDir
 ```
 iGDP_homology_recall.sh -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_iGDP/scripts> -d <mmseqs_DB> [options]
 
-Parameters:
-  -i <required>:  input contigs [fa.gz or uncompress]
+options:
+  -i  <required>:  input assembled contigs [uncompressed file]
   -o <required>:  path to output directory
   -p <required>:  path to directory of GRP scripts
   -d <required>:  database for mmseqs search
@@ -64,8 +64,8 @@ Parameters:
 ```
 perl telo_reads_recall.pl -i <input.contigs.fa> -o <output_dir> -p <path_to_GRP/scripts> -r1 <reads1> -r2 <reads2> [options]
 
-Parameters:
-  -i  <required>:  input contigs [fa.gz or uncompress]
+options:
+  -i  <required>:  input assembled contigs [uncompressed file]
   -o  <required>:  path to output directory
   -p  <required>:  path to directory of GRP scripts
   -r1 <required>:  read1 input file name [fq.gz or uncompress]
