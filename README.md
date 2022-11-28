@@ -41,7 +41,7 @@ $ mmseqs databases NR NRdb tmpDir
 # Usage
 ## Workflow
 <div align=center>
-<img src = "https://user-images.githubusercontent.com/107245708/204125506-400ad79a-a7e2-436e-abd4-b290eb2fd640.jpg">
+<img src = "https://user-images.githubusercontent.com/107245708/204125506-400ad79a-a7e2-436e-abd4-b290eb2fd640.jpg", width = "600">
 </div>
 
 ## Run iGDP
