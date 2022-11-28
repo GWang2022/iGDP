@@ -42,40 +42,51 @@ $ mmseqs databases NR NRdb tmpDir
 ## Workflow
 <div align=center>
 <img src = "https://user-images.githubusercontent.com/107245708/204125506-400ad79a-a7e2-436e-abd4-b290eb2fd640.jpg", width = "600">
-</div>
+</div>  
 
 ## Run iGDP
 * ### Implement homology search approach
 ```
-iGDP_homology_recall.sh -i <input.contigs.fa> -o <output_dir> -b <bin_size> -p <path_to_iGDP/scripts> -d <mmseqs_DB> [options]
+iGDP_homology_search.pl -i <input.contigs.fa> -o <output_dir> -d <mmseqs_DB> [options]
 
 options:
-  -i  <required>:  input assembled contigs [uncompressed file]
-  -o <required>:  path to output directory
-  -p <required>:  path to directory of GRP scripts
+  -i <required>:  input assembled contigs [.gz or uncompressed]
+  -o <required>:  output directory [e.g. homology_search_approach]
   -d <required>:  database for mmseqs search
+  -rank [optional]: target taxonomic space of homology search [format, rank:taxon; rank must be phylum/class/order/family/genus/species and taxon begins     
+                  with a capital letter; default: phylum:Ciliophora]
   -b [optional]:  bin size [contig is cut to -b bp for homology search; default: 1000]
-  -s [optional]:  mmseqs sensitivity [1.0 faster; 4.0 fast; 7.5 sensitive; default: 4.0]
-  -t [optional]:  number of threads used for MMseqs2 seach [default: 48]
+  -s [optional]:  mmseqs seach sensitivity [1.0 faster; 4.0 fast; 7.5 sensitive; default: 5.7]
+  -t [optional]:  number of threads used for mmseqs [default: 72]
   -T [optional]:  translation table of the target genome [default: 6 for ciliates]
 ```
 
 * ### Implement telomere-reads assisted approach
 ```
-perl telo_reads_recall.pl -i <input.contigs.fa> -o <output_dir> -p <path_to_GRP/scripts> -r1 <reads1> -r2 <reads2> [options]
+iGDP_telomere_reads.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 <reads2> [options]
 
 options:
-  -i  <required>:  input assembled contigs [uncompressed file]
-  -o  <required>:  path to output directory
-  -p  <required>:  path to directory of GRP scripts
-  -r1 <required>:  read1 input file name [fq.gz or uncompress]
-  -r2 <required>:  read1 input file name [fq.gz or uncompress]
+  -i  <required>:  input assembled contigs [.gz or uncompressed]
+  -o  <required>:  output directory [e.g. telomere_reads_approach]
+  -r1 <required>:  read1 input file name [.gz or uncompress]
+  -r2 <required>:  read2 input file name [.gz or uncompress]
   -u  [optional]:  5' to 3' telomeric repeat unit of the target genome [default: CCCCAA for Tetrahymena species]
   -b  [optional]:  threads for bwa mem [default: 8]
   -s  [optional]:  threads for samtools view [default: 8]
 ```
 
-* ### Combining Sequences From Two Approaches
+* ### Implement clustering approach
 ```
-cat target.homology.recall.contig.id target.telo_reads.recall.contig.id | sort | uniq | perl /path_to_GRP/scripts/combine_contigs.pl input.contigs.fa - > final.target.genome.fasta
+iGDP_clustering.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 <reads2> [options]
+
+options:
+  -i  <required>:  input assembled contigs [.gz or uncompressed]
+  -o  <required>:  output directory [e.g. clustering_approach]
+  -r1 <required>:  read1 input file name [.gz or uncompress]
+  -r2 <required>:  read2 input file name [.gz or uncompress]
+  -b  [optional]:  threads for bwa mem [default: 8]
+  -s  [optional]:  threads for samtools view [default: 8]
 ```
+*Tip:* Running `iGDP_clustering.pl` must be after implementing `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` approaches.
+
+# An example of running iGDP
