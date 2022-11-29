@@ -98,12 +98,18 @@ options:
 *Tip:* Running `iGDP_clustering.pl` must be after implementing `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` programs.
 
 # An example of running iGDP
-Please enter the iGDP example directory after downloading iGDP by `git clone` and setting up the environmental variable.
+Please enter the iGDP directory and set up the environmental variable after downloading iGDP by `git clone`
 
-The file "example/assemly.fa.gz" is a contaminated genome assembly.
-The files "example/read1.fq.gz" and "example/read2.fq.gz" are paired-end sequencing gemomic data .
+Then you will see three files in the `example/` directory:
+"assemly.fa.gz" is a contaminated genome assembly.
+"read1.fq.gz" and "read2.fq.gz" are paired-end short-read sequencing data for the above genome.
 
-Enter the directory and type as following in your terminal:
+Enter the `example/` directory and implement the following command lines:
+```
+iGDP_homology_search.pl -i assemly.fa.gz -o homology_search -d *{path_to_NR}*/NRdb
+iGDP_telomere_reads.pl -i assemly.fa.gz -o telomere_reads -r1 read1.fq.gz -r2 read2.fq.gz
+iGDP_clustering.pl -i assemly.fa.gz -o clustering -r1 read1.fq.gz -r2 read2.fq.gz
+```
 
 A new folder "03_output_dir" (as specified) will be created and output results will be deposited within it.
 
