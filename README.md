@@ -1,14 +1,19 @@
-# iGDP v1.0.0
+# iGDP v1.1.0
 
-![Good](https://img.shields.io/badge/latest%20version-v1.0.0-red) ![Active](https://www.repostatus.org/badges/latest/active.svg) ![GPL](https://img.shields.io/badge/license-GPLv3.0-blue)
+![Good](https://img.shields.io/badge/latest%20version-v1.1.0-red) ![Active](https://www.repostatus.org/badges/latest/active.svg) ![GPL](https://img.shields.io/badge/license-GPLv3.0-blue)
 
 ## An integrated Genome Decontamination Pipeline (iGDP) for wild ciliated microeukaryotes
 
 The iGDP works as a positive filter to select target ciliate sequences from contaminated genomic data by integrating homology search, telomere reads-assisted and clustering approaches.
 
-  * Issues, bug reports and feature requests: [GitHub issues](https://github.com/GWang2022/iGDP/issues)
-  * Contact: Guangying Wang (wangguangying@ihb.ac.cn); Chuangqi Jiang (jiangchuanqi@ihb.ac.cn)
-  * Citation: [Jiang et al. (2022), unpublished]()
+<div align=center>
+<img src = "https://user-images.githubusercontent.com/107245708/204413936-b0c68024-aee4-4804-8d1a-795de596789d.jpg", width = "450">
+</div>  
+ 
+
+* Issues, bug reports and feature requests: [GitHub issues](https://github.com/GWang2022/iGDP/issues)
+* Contact: Guangying Wang (wangguangying@ihb.ac.cn); Chuangqi Jiang (jiangchuanqi@ihb.ac.cn)
+* Citation: [Jiang et al. (2022). iGDP: An integrated Genome Decontamination Pipeline for wild ciliated microeukaryotes. Unpublished.]()
 
 # Install
 ## Depend tools (Please ignore if already available)  
@@ -47,7 +52,7 @@ $ mmseqs databases NR NRdb tmpDir
 ## Run iGDP
 * ### Implement homology search approach
 ```
-iGDP_homology_search.pl -i <input.contigs.fa> -o <output_dir> -d <mmseqs_DB> [options]
+$ iGDP_homology_search.pl -i <input.contigs.fa> -o <output_dir> -d <mmseqs_DB> [options]
 
 options:
   -i <required>:  input assembled contigs [.gz or uncompressed]
@@ -63,7 +68,7 @@ options:
 
 * ### Implement telomere-reads assisted approach
 ```
-iGDP_telomere_reads.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 <reads2> [options]
+$ iGDP_telomere_reads.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 <reads2> [options]
 
 options:
   -i  <required>:  input assembled contigs [.gz or uncompressed]
@@ -77,7 +82,7 @@ options:
 
 * ### Implement clustering approach
 ```
-iGDP_clustering.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 <reads2> [options]
+$ iGDP_clustering.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 <reads2> [options]
 
 options:
   -i  <required>:  input assembled contigs [.gz or uncompressed]
