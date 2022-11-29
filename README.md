@@ -100,4 +100,4 @@ options:
 
 # Update
 * 2022/11/30
-   * add clustering program
+   * intergate clustering program into iGDP
