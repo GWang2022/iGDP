@@ -8,7 +8,7 @@ iGDP works as a 'positive filter' to select target ciliate sequences from genomi
 
 </br>
 <div align=center>
-<img src = "https://user-images.githubusercontent.com/107245708/204431156-af341541-dc15-4939-97b8-ca513c29878e.jpg">
+<img src = "https://user-images.githubusercontent.com/107245708/204445549-b7a020ad-2268-4fe6-9c76-a6758b411ec8.jpg">
 </div>
 
 </br>
