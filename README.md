@@ -94,7 +94,7 @@ options:
   -b  [optional]:  threads for bwa mem [default: 8]
   -s  [optional]:  threads for samtools view [default: 8]
 ```
-*Tip:* Running `iGDP_clustering.pl` must be after implementing `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` approaches.
+*Tip:* Running `iGDP_clustering.pl` must be after implementing `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` programs.
 
 # An example of running iGDP
 
