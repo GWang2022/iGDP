@@ -9,9 +9,9 @@ The iGDP works as a 'positive filter' to select target ciliate sequences from ge
 </br>
 <div align=center>
 <img src = "https://user-images.githubusercontent.com/107245708/204431156-af341541-dc15-4939-97b8-ca513c29878e.jpg">
-</div>  
-</br>
+</div>
 
+</br>
 * Issues, bug reports and feature requests: [GitHub issues](https://github.com/GWang2022/iGDP/issues)
 * Contact: Guangying Wang (wangguangying@ihb.ac.cn); Chuangqi Jiang (jiangchuanqi@ihb.ac.cn)
 * Citation: [Jiang et al. (2022). iGDP: An integrated Genome Decontamination Pipeline for wild ciliated microeukaryotes. Unpublished.]()
