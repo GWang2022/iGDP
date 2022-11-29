@@ -52,7 +52,7 @@ $ mmseqs databases NR NRdb tmpDir
 </div>  
 
 ## Run iGDP
-* ### Implement homology search approach
+* ### Implement homology search program
 ```
 $ iGDP_homology_search.pl -i <input.contigs.fa> -o <output_dir> -d <mmseqs_DB> [options]
 
@@ -68,7 +68,7 @@ options:
   -T [optional]:  translation table of the target genome [default: 6 for ciliates]
 ```
 
-* ### Implement telomere-reads assisted approach
+* ### Implement telomere-reads assisted program
 ```
 $ iGDP_telomere_reads.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 <reads2> [options]
 
@@ -82,7 +82,7 @@ options:
   -s  [optional]:  threads for samtools view [default: 8]
 ```
 
-* ### Implement clustering approach
+* ### Implement clustering program
 ```
 $ iGDP_clustering.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 <reads2> [options]
 
@@ -97,3 +97,7 @@ options:
 *Tip:* Running `iGDP_clustering.pl` must be after implementing `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` approaches.
 
 # An example of running iGDP
+
+# Update
+* 2022/11/30
+   * add clustering program
