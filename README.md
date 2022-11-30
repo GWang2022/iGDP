@@ -98,7 +98,7 @@ options:
 *Tip:* Running `iGDP_clustering.pl` must be after implementing `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` programs.
 
 # An example of running iGDP
-Please enter the `iGDP` directory and set up the environmental variable after downloading iGDP and NR protein database.
+Please enter the `iGDP/` directory and set up the environmental variable after downloading iGDP and NR protein database.
 
 You will see three files in the `example/` directory:
 
