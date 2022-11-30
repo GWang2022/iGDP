@@ -8,12 +8,6 @@ iGDP works as a "positive filter" to select target ciliate sequences from genomi
 
 </br>
 <div align=center>
-<img src = "https://user-images.githubusercontent.com/107245708/204445549-b7a020ad-2268-4fe6-9c76-a6758b411ec8.jpg">
-</div>
-
-</br>
-
-<div align=center>
 <img src = "https://user-images.githubusercontent.com/107245708/204684430-ead5e9c4-3b43-4aaa-95a2-cd50a9212f87.jpg", width = "500">
 </div>
 
@@ -65,7 +59,7 @@ $ iGDP_homology_search.pl -i <input.contigs.fa> -o <output_dir> -d <mmseqs_DB> [
 
 options:
   -i <required>:  input assembled contigs [.gz or uncompressed]
-  -o <required>:  output directory [e.g. homology_search_approach]
+  -o <required>:  output directory [e.g. homology_search]
   -d <required>:  database for mmseqs search
   -rank [optional]: target taxonomic space of homology search [format, rank:taxon; rank must be phylum/class/order/family/genus/species and taxon begins     
                   with a capital letter; default: phylum:Ciliophora]
@@ -81,7 +75,7 @@ $ iGDP_telomere_reads.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 
 
 options:
   -i  <required>:  input assembled contigs [.gz or uncompressed]
-  -o  <required>:  output directory [e.g. telomere_reads_approach]
+  -o  <required>:  output directory [e.g. telomere_reads]
   -r1 <required>:  read1 input file name [.gz or uncompress]
   -r2 <required>:  read2 input file name [.gz or uncompress]
   -u  [optional]:  5' to 3' telomeric repeat unit of the target genome [default: CCCCAA for Tetrahymena species]
@@ -95,7 +89,7 @@ $ iGDP_clustering.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 <rea
 
 options:
   -i  <required>:  input assembled contigs [.gz or uncompressed]
-  -o  <required>:  output directory [e.g. clustering_approach]
+  -o  <required>:  output directory [e.g. clustering]
   -r1 <required>:  read1 input file name [.gz or uncompress]
   -r2 <required>:  read2 input file name [.gz or uncompress]
   -b  [optional]:  threads for bwa mem [default: 8]
