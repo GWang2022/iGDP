@@ -4,7 +4,7 @@
 
 ## An integrated Genome Decontamination Pipeline (iGDP) for wild ciliated microeukaryotes
 
-iGDP works as a 'positive filter' to select target ciliate sequences from genomic sequencing data of wild specimens containing various contaminants by integrating homology search, telomere reads-assisted and clustering approaches.
+iGDP works as a 'positive filter' to select target ciliate sequences from genomic sequencing data containing various contaminants by integrating homology search, telomere reads-assisted and clustering approaches.
 
 </br>
 <div align=center>
@@ -15,7 +15,7 @@ iGDP works as a 'positive filter' to select target ciliate sequences from genomi
 
 * Issues, bug reports and feature requests: [GitHub issues](https://github.com/GWang2022/iGDP/issues)
 * Contact: Guangying Wang (wangguangying@ihb.ac.cn); Chuangqi Jiang (jiangchuanqi@ihb.ac.cn)
-* Citation: [Jiang et al. (2022). iGDP: An integrated Genome Decontamination Pipeline for wild ciliated microeukaryotes. Unpublished.]()
+* Citation: iGDP: An integrated Genome Decontamination Pipeline for wild ciliated microeukaryotes. Unpublished.]()
 
 # Install
 ## Depend tools (Please ignore if already available)  
@@ -112,12 +112,12 @@ $ iGDP_telomere_reads.pl -i assemly.fa.gz -o telomere_reads -r1 read1.fq.gz -r2 
 $ iGDP_clustering.pl -i assemly.fa.gz -o clustering -r1 read1.fq.gz -r2 read2.fq.gz
 ```
 
-The follwong data files will be created and deposited in the `example/` directory:  
+Then the follwong data files will be created and deposited in the `example/` directory:  
 * The files `homology_search.homology.recall.contigs`, `telomere_reads.telo_reads.recall.contigs` and `clustering.contigs` contain contig IDs obtained by `iGDP_homology_search.pl`, `iGDP_telomere_reads.pl` and `iGDP_clustering.pl`, respectively;
 
 * The folders `homology_search/`, `telomere_reads/` and `clustering/` contain intermediate data files generate by the above commands.
 
-* The file `final.genome.fa` is the final genome after contamination removal.
+* The file `final_genome.fa` is the final genome after contamination removal.
 
 # Update
 * 2022/10/14
