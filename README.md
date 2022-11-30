@@ -100,7 +100,7 @@ options:
 # An example of running iGDP
 Please enter the iGDP directory and set up the environmental variable after downloading iGDP and NR protein database.
 
-Then you will see three files in the `example/` directory:
+You will see three files in the `example/` directory:
 
 * The file `assemly.fa.gz` is a contaminated genome assembly.  
 * The files `read1.fq.gz` and `read2.fq.gz` are paired-end short-read sequencing data for the above genome.
