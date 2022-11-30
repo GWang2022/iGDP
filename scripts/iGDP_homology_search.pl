@@ -9,7 +9,7 @@ iGDP_homology_search.pl -i <input.contigs.fa> -o <output_dir> -d <mmseqs_DB> [op
 
 options:
 	-i <required>:  input assembled contigs [.gz or uncompressed]
-	-o <required>:  output directory [e.g. homology_search_approach]
+	-o <required>:  output directory [e.g. homology_search]
 	-d <required>:  database for mmseqs search
 	-rank [optional]:  target taxonomic space of homology search [format, rank:taxon; rank must be phylum/class/order/family/genus/species and taxon begins with a capital letter; default: phylum:Ciliophora]
 	-b [optional]:  bin size [contig is cut to -b bp for homology search; default: 1000]
