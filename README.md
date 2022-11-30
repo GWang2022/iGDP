@@ -18,27 +18,27 @@ iGDP works as a "positive filter" to select target ciliate sequences from genomi
 * Citation: [iGDP: An integrated Genome Decontamination Pipeline for wild ciliated microeukaryotes. Unpublished.]()
 
 # Install
-## Depend tools (Please ignore if already available)  
-  ```
-  # mmseqs2
-  $ conda install -c bioconda mmseqs2
+* ## Depend tools (Please ignore if already available)  
+```
+# mmseqs2
+$ conda install -c bioconda mmseqs2
   
-  # bwa
-  $ conda install -c bioconda bwa
+# bwa
+$ conda install -c bioconda bwa
   
-  # samtools
-  $ conda install -c bioconda samtools
+# samtools
+$ conda install -c bioconda samtools
   
-  # metabat2
-  $ conda install -c bioconda metabat2
-  ```
-## iGDP 
-  ```
-  $ git clone https://github.com/GWang2022/iGDP.git
-  # add iGDP scripts to your environment
-  $ echo 'PATH=$(pwd)/iGDP/scripts:$PATH' >> ~/.bashrc
-  $ source ~/.bashrc
-  ```
+# metabat2
+$ conda install -c bioconda metabat2
+```
+* ## iGDP 
+```
+$ git clone https://github.com/GWang2022/iGDP.git
+# add iGDP scripts to your environment
+$ echo 'PATH=$(pwd)/iGDP/scripts:$PATH' >> ~/.bashrc
+$ source ~/.bashrc
+```
 # Download NCBI NR protein database using mmseqs
 ```
 # Usage: mmseqs databases <name> <o:sequenceDB> <tmpDir> [options]
