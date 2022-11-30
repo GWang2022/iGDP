@@ -1,6 +1,6 @@
-## homology search approach
-nohup perl /path_to_GRP/scripts/homology_recall.pl -i input.contigs.fa -o target -p /path_to_GRP/scripts -d mmseqs_DB 2>>grp.log&
-## telomere reads assisted approach 
-nohup perl /path_to_GRP/scripts/telo_reads_recall.pl -i input.contigs.fa -o target -p /path_to_GRP/scripts -r1 example_read1.fq -r2 example_read2.fq 2>>grp.log &
-## obtain final target genome sequences
-cat target.homology.recall.contig.id target.telo_reads.recall.contig.id | sort | uniq | perl /path_to_GRP/scripts/combine_contigs.pl input.contigs.fa - > target.genome.fasta
+# homology search program
+$ nohup iGDP_homology_search.pl -i assemly.fa.gz -o homology_search -d {path_to_NR}/NRdb &
+# telomere reads-assisted program 
+$ nohup iGDP_telomere_reads.pl -i assemly.fa.gz -o telomere_reads -r1 read1.fq.gz -r2 read2.fq.gz &
+# clustering program
+$ nohup iGDP_clustering.pl -i assemly.fa.gz -o clustering -r1 read1.fq.gz -r2 read2.fq.gz &
