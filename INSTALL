@@ -1,0 +1,4 @@
+$ git clone https://github.com/GWang2022/iGDP.git
+# add iGDP scripts to your environment
+$ echo 'PATH=$(pwd)/iGDP/scripts:$PATH' >> ~/.bashrc
+$ source ~/.bashrc
