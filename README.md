@@ -117,6 +117,9 @@ The follwong data files will be created and deposited in the `example/` director
 
 * The folders `homology_search/`, `telomere_reads/` and `clustering/` contain intermediate data files generate by the above commands.
 
+* The file `final.genome.fa` is the final genome after contamination removal.
+
 # Update
 * 2022/10/14
    * intergate clustering program into iGDP
+   * add `-rank` option allowing user to set the homology search space for the target species.
