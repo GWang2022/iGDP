@@ -9,7 +9,7 @@ iGDP_telomere_reads.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 <r
 
 options:
         -i  <required>:  input assembled contigs [.gz or uncompressed]
-        -o  <required>:  output directory [e.g. telomere_reads_approach]
+        -o  <required>:  output directory [e.g. telomere_reads]
         -r1 <required>:  read1 input file name [fq.gz or uncompress]
         -r2 <required>:  read1 input file name [fq.gz or uncompress]
         -u  [optional]:  5' to 3' telomeric repeat unit of the target genome [default: CCCCAA for Tetrahymena species]
