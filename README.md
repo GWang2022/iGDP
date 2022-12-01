@@ -69,7 +69,7 @@ options:
   -T [optional]:  translation table of the target genome [default: 6 for ciliates]
 ```
 
-* ### Implement telomere reads-assisted search program
+* ### Implement telomere reads-assisted program
 ```
 $ iGDP_telomere_reads.pl -i <input.contigs.fa> -o <output_dir> -r1 <reads1> -r2 <reads2> [options]
 
