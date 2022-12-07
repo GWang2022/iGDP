@@ -35,8 +35,8 @@ $ conda install -c bioconda metabat2
 * ## iGDP 
 ```
 $ git clone https://github.com/GWang2022/iGDP.git
-# add iGDP scripts to your environment
-$ echo 'PATH=$(pwd)/iGDP/scripts:$PATH' >> ~/.bashrc
+# add iGDP scripts directory to your PATH environment variable
+$ echo 'PATH=$(pwd)/iGDP/scripts/:$PATH' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 # Download NCBI NR protein database using mmseqs
@@ -98,7 +98,7 @@ options:
 *Tip:* Running `iGDP_clustering.pl` must be after implementing `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` programs.
 
 # An example of running iGDP
-Please enter the `iGDP/` directory and set up the environmental variable after downloading iGDP and NR protein database.
+Please enter the `iGDP/` directory after downloading iGDP and NR protein database.
 
 You will see three files in the `example/` directory:
 
