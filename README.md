@@ -51,6 +51,9 @@ $ mmseqs databases NR NRdb tmpDir
 <div align=center>
 <img src = "https://user-images.githubusercontent.com/107245708/204125506-400ad79a-a7e2-436e-abd4-b290eb2fd640.jpg", width = "600">
 </div>  
+<div align=center>
+<img src = "https://user-images.githubusercontent.com/107245708/215422762-7d1dac72-a9cc-47d9-a1df-43a38060531e.png", width = "600">
+</div> 
 
 ## Run iGDP
 * ### Implement homology search program
