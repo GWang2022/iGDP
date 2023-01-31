@@ -35,7 +35,7 @@ $ conda install -c bioconda metabat2
 * ## iGDP 
 ```
 $ git clone https://github.com/GWang2022/iGDP.git
-# give executable permission to all scripts in iGDP directory
+# give executable permission to all scripts in iGDP scripts directory
 $ chmod a+x iGDP/scripts/*pl
 # add iGDP scripts directory to your PATH environment variable
 $ echo 'PATH=$(pwd)/iGDP/scripts/:$PATH' >> ~/.bashrc
