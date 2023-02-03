@@ -128,7 +128,7 @@ This mode first selects sequences from all non-Ciliophora contaminants and then 
 
 After run `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` as above, implement the following command line:
 ```
-$ iGDP_clustering_negative.pl -i assemly.fa.gz -o clustering -r1 read1.fq.gz -r2 read2.fq.gz
+$ iGDP_clustering_negative.pl -i assemly.fa.gz -o clustering_negative -r1 read1.fq.gz -r2 read2.fq.gz
 ```
 * The file `final_genome.negative.fa` is the final genome after contamination removal.
 
