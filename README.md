@@ -122,7 +122,7 @@ Then the follwong data files will be created and deposited in the `example/` dir
 
 * The file `final_genome.fa` is the final genome after contamination removal.
 
-* ## Positive filtering mode: directly select ciliate sequences as target genome
+* ## Negative filtering mode: select sequences from all non-Ciliophora contaminants and then keep the rest as the target genome
 
 # Update
 * 2022/10/14
