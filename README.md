@@ -136,5 +136,5 @@ $ iGDP_clustering_negative.pl -i assemly.fa.gz -o clustering_negative -r1 read1.
 * 2022/10/14
    * intergate clustering program into iGDP
    * add `-rank` option allowing user to set the homology search space for the target species.
-* 2323/01/25
+* 2023/01/25
    * add `negative filtering mode` into iGDP. This mode is suitable to genomic data without contamination from other ciliates such as single-cell sequencing data
