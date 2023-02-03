@@ -122,11 +122,11 @@ Then the follwong data files will be created and deposited in the `example/` dir
 
 * The file `final_genome.fa` is the final genome after contamination removal.
 
-* ## Positive filtering mode: directly select ciliate sequences as target genome (default mode)
+* ## Positive filtering mode: directly select ciliate sequences as target genome
 
 # Update
 * 2022/10/14
    * intergate clustering program into iGDP
    * add `-rank` option allowing user to set the homology search space for the target species.
 * 2323/01/25
-   * add `negative filtering mode` into iGDP
+   * add `negative filtering mode` into iGDP. This mode is suitable to genomic data without contamination from other ciliates such as single-cell sequencing data
