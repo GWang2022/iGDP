@@ -100,9 +100,10 @@ options:
 *Tip:* Running `iGDP_clustering.pl` must be after implementing `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` programs.
 
 # An example of running iGDP
-* ## Positive filtering mode: directly select ciliate sequences as target genome (default mode)
-Please enter the `iGDP/` directory after downloading iGDP and NR protein database.
+* ## Positive filtering mode (default)
+This mode directly select ciliate sequences as the target genome
 
+Please enter the `iGDP/` directory after downloading iGDP and NR protein database.
 You will see three files in the `example/` directory:
 
 * The file `assemly.fa.gz` is a contaminated genome assembly.  
