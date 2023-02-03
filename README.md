@@ -126,11 +126,11 @@ Then the follwong data files will be created and deposited in the `example/` dir
 ## Negative filtering mode
 This mode first selects sequences from all non-Ciliophora contaminants and then keep the rest as the target genome.
 
-After run `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` as above, implement the following command lines:
+After run `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` as above, implement the following command line:
 ```
 $ iGDP_clustering_negative.pl -i assemly.fa.gz -o clustering -r1 read1.fq.gz -r2 read2.fq.gz
 ```
-* The file `final_genome_negative.fa` is the final genome after contamination removal.
+* The file `final_genome.negative.fa` is the final genome after contamination removal.
 
 # Update
 * 2022/10/14
