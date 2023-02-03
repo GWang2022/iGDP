@@ -125,3 +125,5 @@ Then the follwong data files will be created and deposited in the `example/` dir
 * 2022/10/14
    * intergate clustering program into iGDP
    * add `-rank` option allowing user to set the homology search space for the target species.
+* 2323/01/25
+   * add `negative filtering mode` into iGDP
