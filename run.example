@@ -1,6 +1,15 @@
+# positive mode (default)
 # homology search program
 $ nohup iGDP_homology_search.pl -i assemly.fa.gz -o homology_search -d {path_to_NR}/NRdb &
 # telomere reads-assisted program 
 $ nohup iGDP_telomere_reads.pl -i assemly.fa.gz -o telomere_reads -r1 read1.fq.gz -r2 read2.fq.gz &
 # clustering program
 $ nohup iGDP_clustering.pl -i assemly.fa.gz -o clustering -r1 read1.fq.gz -r2 read2.fq.gz &
+
+# negative mode
+# homology search program
+$ nohup iGDP_homology_search.pl -i assemly.fa.gz -o homology_search -d {path_to_NR}/NRdb &
+# telomere reads-assisted program 
+$ nohup iGDP_telomere_reads.pl -i assemly.fa.gz -o telomere_reads -r1 read1.fq.gz -r2 read2.fq.gz &
+# clustering program 
+$ nohup iGDP_clustering_negative.pl -i assemly.fa.gz -o clustering_negative -r1 read1.fq.gz -r2 read2.fq.gz &
