@@ -3,9 +3,9 @@
 ![Good](https://img.shields.io/badge/latest%20version-v1.1.0-red) ![Active](https://www.repostatus.org/badges/latest/active.svg) ![GPL](https://img.shields.io/badge/license-GPLv3.0-blue)
 
 ## An integrated Genome Decontamination Pipeline (iGDP) for wild ciliated microeukaryotes
-
-iGDP works as a "positive or negative filter" to extract target ciliate sequences from genomic sequencing data containing various contaminants by integrating homology search, telomere reads-assisted and clustering approaches.
-
+text-align: justify
+iGDP can work as "positive or negative filter" to extract target ciliate sequences from genomic sequencing data containing various contaminants by integrating homology search, telomere reads-assisted and clustering approaches.
+text-align: justify
 </br>
 <div align=center>
 <img src = "https://user-images.githubusercontent.com/107245708/204684430-ead5e9c4-3b43-4aaa-95a2-cd50a9212f87.jpg", width = "500">
