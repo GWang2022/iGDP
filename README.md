@@ -124,7 +124,7 @@ Then the follwong data files will be created and deposited in the `example/` dir
 * The file `final_genome.fa` is the final genome after contamination removal.
 
 ## Negative filtering mode
-This mode first selects sequences from all non-Ciliophora contaminants and then keep the rest as the target genome. Compared with positive filtering, the obtained genome by this mode usually have higher completeness but lower precision.
+This mode first selects sequences from all non-Ciliophora contaminants and then keep the rest as the target genome. Compared with positive filtering, the obtained genome by this mode usually has higher completeness but lower precision.
 
 After run `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` as above, implement the following command line:
 ```
