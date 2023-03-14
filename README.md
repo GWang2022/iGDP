@@ -15,7 +15,7 @@ iGDP can work as "positive or negative filter" to extract target ciliate sequenc
 
 * Issues, bug reports and feature requests: [GitHub issues](https://github.com/GWang2022/iGDP/issues)
 * Contact: Guangying Wang (wangguangying@ihb.ac.cn); Chuanqi Jiang (jiangchuanqi@ihb.ac.cn)
-* Citation: [iGDP: An integrated Genome Decontamination Pipeline for wild ciliated microeukaryotes. Molecular Ecology Resources, 2023.](https://doi.org/10.1111/1755-0998.13782)
+* Citation: [Chuanqi Jiang, Guangying Wang, Jing Zhang, Siyu Gu, Xueyan Wang, Weiwei Qin, Kai Chen, Dongxia Yuan, Xiaocui Chai, Mingkun Yang, Fang Zhou, Jie Xiong, Wei Miao (2023). iGDP: An integrated Genome Decontamination Pipeline for wild ciliated microeukaryotes. Molecular Ecology Resources.](https://doi.org/10.1111/1755-0998.13782)
 
 # Install
 * ## Depend tools (Please ignore if already available)  
